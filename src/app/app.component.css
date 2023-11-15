@@ -1,0 +1,12 @@
+.vl {
+  border-left: 1px solid rgb(91, 93, 91);
+  height: 500px;
+}
+.todoList
+{
+display: flex;
+flex: 1;
+justify-content: center;
+gap: 50px;
+
+}

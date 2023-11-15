@@ -1,0 +1,11 @@
+<div class="todoList">
+  <app-create-work 
+    (addTodoEvent)="handleAddTodoEvent($event)" 
+  ></app-create-work>
+  <div class="vl"></div>
+  <app-list-wok 
+    [lastData]="todos"
+    [todos]="todos"
+    (editTodoEvent)="handleEditTodoEvent($event)"
+  ></app-list-wok>
+</div>
