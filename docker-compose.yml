@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  angular:
+    build: .
+    ports:
+      - "80:80"
+
+  web:
+    image: httpd:alpine
+    volumes:
+      - ./dist:/usr/local/apache2/htdocs
+    depends_on:
+      - angular
+
